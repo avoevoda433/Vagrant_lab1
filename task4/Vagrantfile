@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
     echo "        listen 8080;" | sudo tee -a /etc/nginx/nginx.conf
     echo "        server_name example.com;" | sudo tee -a /etc/nginx/nginx.conf
     echo "        location / {" | sudo tee -a /etc/nginx/nginx.conf
-    echo "            proxy_pass http://192.168.55.21;" | sudo tee -a /etc/nginx/nginx.conf
+    echo "            proxy_pass http://backend;" | sudo tee -a /etc/nginx/nginx.conf
     echo "        }" | sudo tee -a /etc/nginx/nginx.conf
     echo "    }" | sudo tee -a /etc/nginx/nginx.conf
     echo "}" | sudo tee -a /etc/nginx/nginx.conf
